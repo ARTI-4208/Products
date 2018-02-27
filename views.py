@@ -6,10 +6,10 @@ from django.shortcuts import render
 # Create your views here.
 from rest_framework import viewsets
 
-from customer.models import Customer
-from customer.serializers import CustomerSerializer
+from product.models import Customer
+from product.serializers import CustomerSerializer
 
-class CustomerViewSet(viewsets.ModelViewSet):
-    model = Customer
-    queryset = Customer.objects.all()
-    serializer_class = CustomerSerializer
+class ProductViewSet(viewsets.ModelViewSet):
+    model = Product
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer

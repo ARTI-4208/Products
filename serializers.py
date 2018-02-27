@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
-from customer.models import Customer
+from product.models import Product
 
-class CustomerSerializer(serializers.ModelSerializer):
+class ProductSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Customer
+        model = Product
